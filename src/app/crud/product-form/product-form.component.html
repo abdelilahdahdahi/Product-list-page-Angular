@@ -1,0 +1,119 @@
+<div class="row">
+    <div class="col-6 p-5 mx-auto col-10 col-md-8 col-lg-6">
+        <form  [formGroup]="productForm" (ngSubmit)="createProduct(productForm.value, false)">
+
+            <div class="form-group">
+                <label for="id_magento">ID Magento</label>
+                <input formControlName="id_magento" type="text" class="form-control" id="id_magento" #idMagento>
+                <div class="alert alert-danger" role="alert"
+                    *ngIf="productForm.controls['id_magento'].errors && productForm.controls['id_magento'].touched">
+                    <span *ngIf="productForm.controls['id_magento'].errors?.['required']"> Inserire l'ID magento.
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="img">Immagine</label>
+                <input formControlName="img" type="file" class="form-control" id="img" #img>
+            </div>
+
+            <div class="form-group">
+                <label for="nome_prodotto">Nome Prodotto</label>
+                <input formControlName="nome_prodotto" type="text" class="form-control" id="nome-prodotto"
+                    #nomeProdotto>
+                <div class="alert alert-danger" role="alert"
+                    *ngIf="productForm.controls['nome_prodotto'].errors && productForm.controls['nome_prodotto'].touched">
+                    <span *ngIf="productForm.controls['nome_prodotto'].errors?.['required']"> Inserire il nome del
+                        prodotto. </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="brand">Brand</label>
+                <input formControlName="brand" type="text" class="form-control" id="brand" #brand>
+            </div>
+
+            <div class="form-group">
+                <label for="set_attributi">Set attributi</label>
+                <input formControlName="set_attributi" type="text" class="form-control" id="set-attributi"
+                    #setAttributi>
+            </div>
+
+            <div class="form-group">
+                <label for="SKU">SKU</label>
+                <input formControlName="SKU" type="text" class="form-control" id="SKU" #SKU>
+            </div>
+
+            <div class="form-group">
+                <label for="SKU_fornitore">SKU Fornitore</label>
+                <input formControlName="SKU_fornitore" type="text" class="form-control" id="SKU-fornitore"
+                    #SKUFornitore>
+            </div>
+
+            <div class="form-group">
+                <label for="qnt">Qnt.</label>
+                <input formControlName="qnt" type="number" class="form-control" id="qnt" #qnt>
+            </div>
+
+            <div class="form-group">
+                <label for="prezzp">Prezzo</label>
+                <input formControlName="prezzo" type="number" class="form-control" id="prezzo" #prezzo>
+            </div>
+
+            <div class="form-group">
+                <label for="attivo">Attivo</label>
+                <input formControlName="attivo" type="text" class="form-control" id="attivo" #attivo>
+            </div>
+
+            <div class="form-group">
+                <label for="visibilità">Visibilità</label>
+                <input formControlName="visibilità" type="text" class="form-control" id="visibilità" #visibilità>
+            </div>
+
+            <div class="form-group">
+                <label for="tipologia">Tipologia</label>
+                <input formControlName="tipologia" type="text" class="form-control" id="tipologia" #tipologia>
+            </div>
+
+            <div class="form-group">
+                <label for="assegnatario">Assegnatario</label>
+                <input formControlName="assegnatario" type="text" class="form-control" id="assegnatario" #assegnatario>
+            </div>
+
+            <div class="form-group">
+                <label for="presa_in_carico">Presa in carico</label>
+                <input formControlName="presa_in_carico" type="date" class="form-control" id="presa-in-carico"
+                    #presaInCarico>
+            </div>
+
+            <div class="form-group">
+                <label for="completamento">Completamento</label>
+                <input formControlName="completamento" type="date" class="form-control" id="completamento"
+                    #completamento>
+            </div>
+
+            <div class="form-group">
+                <label for="lingue">Lingue</label>
+                <input formControlName="lingue" type="text" class="form-control" id="lingue" #lingue>
+            </div>
+
+            <div class="form-group">
+                <label for="stato_revisione">Stato revisione</label>
+                <input formControlName="stato_revisione" type="text" class="form-control" id="stato-revisione"
+                    #statoRevisione>
+            </div>
+
+            <div class="form-group">
+                <label for="score">Score</label>
+                <input formControlName="score" type="text" class="form-control" id="score" #score>
+            </div>
+
+            <div class="form-group">
+                <label for="sync">Sync</label>
+                <input formControlName="sync" type="text" class="form-control" id="sync" #sync>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Aggiungi prodotto</button>
+        </form>
+    </div>
+</div>
