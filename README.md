@@ -1,5 +1,6 @@
 # Product List Page - Angular
 ### 🔄️ Ci sono ancora dei dettagli da sistemare legati al design e al formato dei dati
+### 🌐 La parte server è stata sviluppata usando WAMP Server, PHP e MySQL
 
 ## Pagina lista prodotti
 <img width="784" alt="PLP Angular" src="https://github.com/abdelilahdahdahi/Product-list-page-Angular/assets/76753930/32035e90-2543-4302-ad1d-1364a6239bc5">
