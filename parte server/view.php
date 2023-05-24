@@ -5,7 +5,6 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 // include la connessione al database 
 include 'config/database.php';
  
-// delete message prompt will be here
 header("Content-type: application/json; charset=utf8");	
  
 // query per mostrare tutti i dati dal DB
